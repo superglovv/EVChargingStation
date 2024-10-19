@@ -17,11 +17,11 @@ Acest proiect simulează o stație de încărcare pentru vehicule electrice util
 
 ## Poze
 
-Pozele pot fi găsite în folder-ul denumit "Poze".
+Pozele cu setup-ul fizic pot fi găsite în folder-ul denumit "Poze".
 
 ## Video
 
-Videoclipul poate fi văzut prin accesarea link-ului:
+Videoclipul cu funcționalitatea montajului fizic poate fi văzut prin accesarea link-ului:
 [Video pe YouTube](https://youtu.be/XwlkeEq_QTI)
 
 ## Schema Circuitului
