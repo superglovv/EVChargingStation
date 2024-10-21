@@ -56,7 +56,6 @@ Fiecare LED reprezintă un anumit procent de încărcare a bateriei:
 #define BTNSTOP 2
 #define BLINK_INTERVAL 200
 
-int lastIntervalTime = 0; // Momentul ultimei iterații a intervalului de timp.
 int battery = 0; // Nivelul curent de încărcare a bateriei (0-4).
 int charging = 0; // Indică dacă procesul de încărcare este activ (1) sau nu (0).
 int buttonPressDuration = 0; // Timpul în care butonul de STOP a fost apăsat.
@@ -119,7 +118,7 @@ if (stop_button == LOW) {
     if (buttonPressDuration == 0) {
       buttonPressDuration = millis();
     }
-    if (millis() - buttonPressDuration >= 2000) {
+    if (millis() - buttonPressDuration >= INTERVAL) {
       resetStation();
       return;
     }
