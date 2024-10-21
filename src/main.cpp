@@ -12,7 +12,6 @@
 #define BTNSTOP 2
 #define BLINK_INTERVAL 200
 
-int lastIntervalTime = 0;
 int battery = 0;
 int charging = 0;
 int buttonPressDuration = 0;
@@ -77,7 +76,7 @@ void loop() {
     if (buttonPressDuration == 0) {
       buttonPressDuration = millis();
     }
-    if (millis() - buttonPressDuration >= 2000) {
+    if (millis() - buttonPressDuration >= INTERVAL) {
       resetStation();
       return;
     }
